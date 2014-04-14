@@ -276,5 +276,92 @@ public class UserHubLoginUtil extends FunctionReference {
 		}
 		Thread.sleep(3000);
 	}
+	
+public void WidgetTileActivated() throws Exception{
+		
+		
+		resultcount = 0;	
+		testCase = "RP Property Hub Logout: " + input[0];
+				
+		waitForElementPresent(xpath(userLogoutLink));
+		
+			//User Manual
+			try{ 
+				Assert.assertTrue(isElementPresent(xpath(userManual)));
+				}
+				catch(AssertionError e) {
+					fail(input[0] + " - User Manual Link is not Visible");
+					takeScreenshot(input[0]);
+					resultcount++;
+					}
+			//Contact Us
+			try{ 
+				Assert.assertTrue(isElementPresent(xpath(contactUs)));
+				}
+				catch(AssertionError e) {
+					fail(input[0] + " - Contact Us Link is not Visible");
+					takeScreenshot(input[0]);
+					resultcount++;
+					}
+			//Feedback
+			try{ 
+				Assert.assertFalse(isElementPresent(xpath(feedback)));
+				}
+				catch(AssertionError e) {
+					fail(input[0] + "  - Feedback Link is not Visible");
+					takeScreenshot(input[0]);
+					resultcount++;
+					}
+
+				
+		if (resultcount != 0) {
+			fail(input[0]);
+		} else {
+			pass(input[0]);
+		}
+	}
+	
+	public void LinkValidation() throws Exception{
+	
+		resultcount = 0;	
+		testCase = "RP Property Hub Logout: " + input[0];
+				
+		waitForElementPresent(xpath(userLogoutLink));
+		
+			//User Manual
+			try{ 
+				Assert.assertTrue(isElementPresent(xpath(userManual)));
+				}
+				catch(Exception e) {
+					fail(input[0] + " - User Manual Link is not Visible");
+					takeScreenshot(input[0]);
+					resultcount++;
+					}
+			//Contact Us
+			try{ 
+				Assert.assertTrue(isElementPresent(xpath(contactUs)));
+				}
+				catch(Exception e) {
+					fail(input[0] + " - Contact Us Link is not Visible");
+					takeScreenshot(input[0]);
+					resultcount++;
+					}
+			//Feedback
+			try{ 
+				Assert.assertTrue(isElementPresent(xpath(feedback)));
+				}
+				catch(Exception e) {
+					fail(input[0] + "  - Feedback Link is not Visible");
+					takeScreenshot(input[0]);
+					resultcount++;
+					}
+
+				
+		if (resultcount != 0) {
+			fail(input[0]);
+		} else {
+			pass(input[0]);
+		}
+	}
 }
 

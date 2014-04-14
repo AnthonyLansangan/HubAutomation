@@ -442,6 +442,11 @@ public class ObjectReference {
     public static String addNew = "/html/body/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td[3]/table/tbody/tr[1]/td/table/tbody/tr/td[2]/table/tbody/tr/td[5]/a";
     public static String thumbNailImg = "//*[@id='addChannelTabForm']/tbody/tr[6]/td[2]/table/tbody/tr[2]/td/img";
     public static String channelTabsContainer = "//*[@id='channelTabsContainer']/div[2]/table[1]";
+    
+    //Footer
+    public static String userManual = "//a[@id='userManualDownload']";
+    public static String contactUs = "//*[@id='custservice']/table/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[2]/div/a[2]";
+    public static String feedback = "//*[@id='custservice']/table/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[2]/div/a[3]";
 }
 
 
