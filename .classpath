@@ -37,5 +37,6 @@
 	<classpathentry kind="lib" path="poi-excelant-3.9-20121203.jar"/>
 	<classpathentry kind="lib" path="poi-ooxml-3.9-20121203.jar"/>
 	<classpathentry kind="lib" path="poi-ooxml-schemas-3.9-20121203.jar"/>
+	<classpathentry kind="lib" path="/Users/anthony/Documents/workspace/RPPHub/jxl-2.6.jar"/>
 	<classpathentry kind="output" path="target/classes"/>
 </classpath>

@@ -120,4 +120,9 @@ public class ReadXlsData {
 		}
 		return isRowEmpty;  
 	}
+	
+	
+	public static void main (String args){
+		
+	}
 }

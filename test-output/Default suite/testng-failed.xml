@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="hub.test.AdminPromotionCodeTest">
+      <class name="hub.test.AddEditProductTabTest">
         <methods>
           <include name="Startup"/>
-          <include name="promotionTest"/>
+          <include name="testBaseProductAddNew" invocation-numbers="10 16 17 18 19 20 21 22 23 24 32"/>
+          <include name="teardown"/>
         </methods>
-      </class> <!-- hub.test.AdminPromotionCodeTest -->
+      </class> <!-- hub.test.AddEditProductTabTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

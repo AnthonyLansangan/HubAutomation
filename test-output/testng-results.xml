@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" total="48" passed="48">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="191416" started-at="2014-03-11T05:32:38Z" finished-at="2014-03-11T05:35:50Z">
+  <suite name="Default suite" duration-ms="193723" started-at="2014-03-27T09:20:13Z" finished-at="2014-03-27T09:23:27Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="191416" started-at="2014-03-11T05:32:38Z" finished-at="2014-03-11T05:35:50Z">
-      <class name="hub.test.AdminPromotionCodeTest">
-        <test-method status="PASS" signature="Startup(java.lang.String)[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="Startup" is-config="true" duration-ms="112574" started-at="2014-03-11T13:32:38Z" finished-at="2014-03-11T13:34:31Z">
+    <test name="Default test" duration-ms="193723" started-at="2014-03-27T09:20:13Z" finished-at="2014-03-27T09:23:27Z">
+      <class name="hub.test.AddEditProductTabTest">
+        <test-method status="PASS" signature="Startup(java.lang.String)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="Startup" is-config="true" duration-ms="50764" started-at="2014-03-27T17:20:13Z" finished-at="2014-03-27T17:21:04Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,11 +16,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Startup -->
-        <test-method status="PASS" signature="login()[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="login" is-config="true" duration-ms="4049" started-at="2014-03-11T13:34:31Z" finished-at="2014-03-11T13:34:35Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="promotionTest(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="promotionTest" duration-ms="14177" started-at="2014-03-11T13:34:35Z" description="Admin Promotion Code Test" data-provider="Data-Provider-Function" finished-at="2014-03-11T13:34:49Z">
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="22" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
           <params>
             <param index="0">
               <value>
@@ -29,18 +25,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@29a9b1ec]]>
+                <![CDATA[[Ljava.lang.String;@4a81512]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- promotionTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="login" is-config="true" duration-ms="7535" started-at="2014-03-11T13:34:49Z" finished-at="2014-03-11T13:34:57Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="promotionTest(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="promotionTest" duration-ms="14595" started-at="2014-03-11T13:34:57Z" description="Admin Promotion Code Test" data-provider="Data-Provider-Function" finished-at="2014-03-11T13:35:11Z">
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
           <params>
             <param index="0">
               <value>
@@ -49,18 +41,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@43e01252]]>
+                <![CDATA[[Ljava.lang.String;@36ff5321]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- promotionTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="login" is-config="true" duration-ms="4671" started-at="2014-03-11T13:35:11Z" finished-at="2014-03-11T13:35:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="promotionTest(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="promotionTest" duration-ms="14718" started-at="2014-03-11T13:35:16Z" description="Admin Promotion Code Test" data-provider="Data-Provider-Function" finished-at="2014-03-11T13:35:31Z">
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
           <params>
             <param index="0">
               <value>
@@ -69,18 +57,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@2bd2e84e]]>
+                <![CDATA[[Ljava.lang.String;@34aab7bc]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- promotionTest -->
-        <test-method status="PASS" signature="login()[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="login" is-config="true" duration-ms="3704" started-at="2014-03-11T13:35:31Z" finished-at="2014-03-11T13:35:34Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- login -->
-        <test-method status="PASS" signature="promotionTest(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="promotionTest" duration-ms="14978" started-at="2014-03-11T13:35:34Z" description="Admin Promotion Code Test" data-provider="Data-Provider-Function" finished-at="2014-03-11T13:35:49Z">
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="24" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
           <params>
             <param index="0">
               <value>
@@ -89,18 +73,722 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@23916f5c]]>
+                <![CDATA[[Ljava.lang.String;@3404b2a7]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- promotionTest -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:hub.test.AdminPromotionCodeTest@77e64656]" name="teardown" is-config="true" duration-ms="157" started-at="2014-03-11T13:35:49Z" finished-at="2014-03-11T13:35:50Z">
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@206d0c9f]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@5757ab5a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="24" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3cb2ce82]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="20" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7f13d7ef]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="22" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6fc5cd16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@231b98ae]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="41" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@68c4d983]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="16" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@53a45d31]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4be266dd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7ccf5e16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@122a365e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@11575ea3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="13" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7f062839]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@6d3af755]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3a442579]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@4ff848d1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3574ba5b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@276c7c8]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@44361cbb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3c985bf9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@36be5783]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@a637589]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="26" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7b97ab3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="27" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@222681bb]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="26" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@e0f2d81]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="31" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@674775d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="26" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@48487dfa]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="14" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@f46cd29]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@71474694]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10396" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7e6ad8a5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9222" started-at="2014-03-27T17:21:15Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@18b5797a]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9833" started-at="2014-03-27T17:21:24Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@323a4542]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9649" started-at="2014-03-27T17:21:34Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:44Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@f9909d1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9384" started-at="2014-03-27T17:21:44Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:53Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@8538057]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9271" started-at="2014-03-27T17:21:53Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:02Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@220ed406]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="8880" started-at="2014-03-27T17:22:02Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:11Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7b81e761]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9419" started-at="2014-03-27T17:22:11Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:21Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@d7dd0a0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="11170" started-at="2014-03-27T17:22:21Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:32Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3f0bbf4b]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9454" started-at="2014-03-27T17:22:32Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@1c3bf543]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9433" started-at="2014-03-27T17:22:41Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@24631030]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="8819" started-at="2014-03-27T17:22:51Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:23:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@63bbd1f9]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9030" started-at="2014-03-27T17:23:00Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:23:09Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@3fd66596]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9273" started-at="2014-03-27T17:23:09Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:23:18Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@14a77b98]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="8700" started-at="2014-03-27T17:23:18Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:23:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[class java.lang.String]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[Ljava.lang.String;@7fa342bf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testBaseProductAddNew -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="teardown" is-config="true" duration-ms="143" started-at="2014-03-27T17:23:27Z" finished-at="2014-03-27T17:23:27Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- hub.test.AdminPromotionCodeTest -->
+      </class> <!-- hub.test.AddEditProductTabTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -427,6 +427,21 @@ public class ObjectReference {
     public static String adminPromotionNew_UserLimitErrMsg = "/html/body/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td/table/tbody/tr[2]/td/table/tbody/tr/td/table/tbody/tr/td/div/table/tbody/tr[15]/td[2]/div";
     public static String adminPromotion_FlashMessage = "//*[@id='flashMessage']";
 
+    //Admin Add/Edit Product Tab
+    public static String adminProductTabName = "//*[@id='hubAdminChannelTab']"; 
+    public static String adminProductTabDescription = "//*[@id='productTabDescription']";
+    public static String adminProductTabIsActive = "//*[@id='isActive']";
+    public static String adminProductTabSave = "//div[@class='button-text-save']"; 
+    public static String adminChannelTab = "//*[@id='cssmenu']/ul/li[3]/span";
+    public static String adminChannelListTab = "//*[@id='cssmenu']/ul/li[3]/ul/li[2]/a/span";
+    public static String adminChannelSearchTextField = "//*[@id='channelSingleLineSearchTextField']";
+    public static String flashMessage = "//*[@id='flashMessageContent']";  
+    public static String upload = "//*[@id='thumbNailUpload']";  
+    public static String ckeditor = "//*[@id='cke_contents_productTabDescription']/iframe"; 
+    public static String body = "/html/body";
+    public static String addNew = "/html/body/table/tbody/tr/td/table/tbody/tr/td/table/tbody/tr[3]/td/table/tbody/tr/td[3]/table/tbody/tr[1]/td/table/tbody/tr/td[2]/table/tbody/tr/td[5]/a";
+    public static String thumbNailImg = "//*[@id='addChannelTabForm']/tbody/tr[6]/td[2]/table/tbody/tr[2]/td/img";
+    public static String channelTabsContainer = "//*[@id='channelTabsContainer']/div[2]/table[1]";
 }
 
 
