@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="48" passed="48">
+<testng-results skipped="0" failed="5" total="8" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="193723" started-at="2014-03-27T09:20:13Z" finished-at="2014-03-27T09:23:27Z">
+  <suite name="Default suite" duration-ms="145110" started-at="2014-04-15T02:51:39Z" finished-at="2014-04-15T02:54:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="193723" started-at="2014-03-27T09:20:13Z" finished-at="2014-03-27T09:23:27Z">
-      <class name="hub.test.AddEditProductTabTest">
-        <test-method status="PASS" signature="Startup(java.lang.String)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="Startup" is-config="true" duration-ms="50764" started-at="2014-03-27T17:20:13Z" finished-at="2014-03-27T17:21:04Z">
+    <test name="Default test" duration-ms="145110" started-at="2014-04-15T02:51:39Z" finished-at="2014-04-15T02:54:04Z">
+      <class name="hub.test.LoginTest">
+        <test-method status="PASS" signature="Startup(java.lang.String)[pri:0, instance:hub.test.LoginTest@72d69a74]" name="Startup" is-config="true" duration-ms="67761" started-at="2014-04-15T10:51:39Z" finished-at="2014-04-15T10:52:47Z">
           <params>
             <param index="0">
               <value is-null="true"/>
@@ -16,7 +16,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Startup -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="22" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+        <test-method status="PASS" signature="init()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="init" is-config="true" duration-ms="62" started-at="2014-04-15T10:52:47Z" finished-at="2014-04-15T10:52:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- init -->
+        <test-method status="FAIL" signature="testLogin(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.LoginTest@72d69a74]" name="testLogin" duration-ms="16369" started-at="2014-04-15T10:52:47Z" description="Test Login" data-provider="Data-Provider-Function" finished-at="2014-04-15T10:53:03Z">
           <params>
             <param index="0">
               <value>
@@ -25,14 +29,55 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@4a81512]]>
+                <![CDATA[[Ljava.lang.String;@70556101]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at hub.utilities.UserHubLoginUtil.testHubLoginSuccess(UserHubLoginUtil.java:81)
+	at hub.test.LoginTest.testLogin(LoginTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="reinitializeBrowser()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="reinitializeBrowser" is-config="true" duration-ms="3697" started-at="2014-04-15T10:53:03Z" finished-at="2014-04-15T10:53:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reinitializeBrowser -->
+        <test-method status="PASS" signature="testLogin(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.LoginTest@72d69a74]" name="testLogin" duration-ms="707" started-at="2014-04-15T10:53:07Z" description="Test Login" data-provider="Data-Provider-Function" finished-at="2014-04-15T10:53:08Z">
           <params>
             <param index="0">
               <value>
@@ -41,14 +86,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@36ff5321]]>
+                <![CDATA[[Ljava.lang.String;@24bcf6c6]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="reinitializeBrowser()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="reinitializeBrowser" is-config="true" duration-ms="3889" started-at="2014-04-15T10:53:08Z" finished-at="2014-04-15T10:53:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reinitializeBrowser -->
+        <test-method status="PASS" signature="testLogin(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.LoginTest@72d69a74]" name="testLogin" duration-ms="1041" started-at="2014-04-15T10:53:12Z" description="Test Login" data-provider="Data-Provider-Function" finished-at="2014-04-15T10:53:13Z">
           <params>
             <param index="0">
               <value>
@@ -57,14 +106,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@34aab7bc]]>
+                <![CDATA[[Ljava.lang.String;@71ed5401]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="24" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="reinitializeBrowser()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="reinitializeBrowser" is-config="true" duration-ms="3866" started-at="2014-04-15T10:53:13Z" finished-at="2014-04-15T10:53:17Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reinitializeBrowser -->
+        <test-method status="FAIL" signature="testLogin(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.LoginTest@72d69a74]" name="testLogin" duration-ms="938" started-at="2014-04-15T10:53:17Z" description="Test Login" data-provider="Data-Provider-Function" finished-at="2014-04-15T10:53:18Z">
           <params>
             <param index="0">
               <value>
@@ -73,14 +126,55 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@3404b2a7]]>
+                <![CDATA[[Ljava.lang.String;@7553c244]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at hub.utilities.UserHubLoginUtil.testHubLoginEmpty(UserHubLoginUtil.java:108)
+	at hub.test.LoginTest.testLogin(LoginTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="reinitializeBrowser()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="reinitializeBrowser" is-config="true" duration-ms="3631" started-at="2014-04-15T10:53:18Z" finished-at="2014-04-15T10:53:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reinitializeBrowser -->
+        <test-method status="FAIL" signature="testLogin(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.LoginTest@72d69a74]" name="testLogin" duration-ms="865" started-at="2014-04-15T10:53:21Z" description="Test Login" data-provider="Data-Provider-Function" finished-at="2014-04-15T10:53:22Z">
           <params>
             <param index="0">
               <value>
@@ -89,14 +183,55 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@206d0c9f]]>
+                <![CDATA[[Ljava.lang.String;@4df73a89]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at hub.utilities.UserHubLoginUtil.testHubLoginEmpty(UserHubLoginUtil.java:108)
+	at hub.test.LoginTest.testLogin(LoginTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="reinitializeBrowser()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="reinitializeBrowser" is-config="true" duration-ms="3895" started-at="2014-04-15T10:53:22Z" finished-at="2014-04-15T10:53:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reinitializeBrowser -->
+        <test-method status="FAIL" signature="testLogin(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.LoginTest@72d69a74]" name="testLogin" duration-ms="852" started-at="2014-04-15T10:53:26Z" description="Test Login" data-provider="Data-Provider-Function" finished-at="2014-04-15T10:53:27Z">
           <params>
             <param index="0">
               <value>
@@ -105,14 +240,55 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@5757ab5a]]>
+                <![CDATA[[Ljava.lang.String;@2224205c]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at hub.utilities.UserHubLoginUtil.testHubLoginEmpty(UserHubLoginUtil.java:108)
+	at hub.test.LoginTest.testLogin(LoginTest.java:44)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="24" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="reinitializeBrowser()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="reinitializeBrowser" is-config="true" duration-ms="3720" started-at="2014-04-15T10:53:27Z" finished-at="2014-04-15T10:53:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reinitializeBrowser -->
+        <test-method status="PASS" signature="testLogin(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.LoginTest@72d69a74]" name="testLogin" duration-ms="749" started-at="2014-04-15T10:53:31Z" description="Test Login" data-provider="Data-Provider-Function" finished-at="2014-04-15T10:53:31Z">
           <params>
             <param index="0">
               <value>
@@ -121,14 +297,18 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@3cb2ce82]]>
+                <![CDATA[[Ljava.lang.String;@14264816]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="20" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="reinitializeBrowser()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="reinitializeBrowser" is-config="true" duration-ms="5789" started-at="2014-04-15T10:53:31Z" finished-at="2014-04-15T10:53:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reinitializeBrowser -->
+        <test-method status="FAIL" signature="testLogin(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.LoginTest@72d69a74]" name="testLogin" duration-ms="16086" started-at="2014-04-15T10:53:37Z" description="Test Login" data-provider="Data-Provider-Function" finished-at="2014-04-15T10:53:53Z">
           <params>
             <param index="0">
               <value>
@@ -137,658 +317,59 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[[Ljava.lang.String;@7f13d7ef]]>
+                <![CDATA[[Ljava.lang.String;@71c88986]]>
               </value>
             </param>
           </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: null
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.fail(Assert.java:101)
+	at hub.utilities.UserHubLoginUtil.testHubLoginSuccess(UserHubLoginUtil.java:81)
+	at hub.test.LoginTest.testLogin(LoginTest.java:41)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:57)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:601)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:335)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:330)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="22" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@6fc5cd16]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- testLogin -->
+        <test-method status="PASS" signature="reinitializeBrowser()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="reinitializeBrowser" is-config="true" duration-ms="10585" started-at="2014-04-15T10:53:53Z" finished-at="2014-04-15T10:54:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@231b98ae]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="41" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@68c4d983]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="16" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@53a45d31]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@4be266dd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@7ccf5e16]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@122a365e]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@11575ea3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="13" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@7f062839]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@6d3af755]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@3a442579]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@4ff848d1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@3574ba5b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@276c7c8]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@44361cbb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@3c985bf9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@36be5783]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="12" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@a637589]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="26" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@7b97ab3]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="27" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@222681bb]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="26" started-at="2014-03-27T17:21:04Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@e0f2d81]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="31" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@674775d]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="26" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@48487dfa]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="14" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@f46cd29]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:05Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@71474694]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="10396" started-at="2014-03-27T17:21:05Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:15Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@7e6ad8a5]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9222" started-at="2014-03-27T17:21:15Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:24Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@18b5797a]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9833" started-at="2014-03-27T17:21:24Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:34Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@323a4542]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9649" started-at="2014-03-27T17:21:34Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:44Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@f9909d1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9384" started-at="2014-03-27T17:21:44Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:21:53Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@8538057]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9271" started-at="2014-03-27T17:21:53Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:02Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@220ed406]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="8880" started-at="2014-03-27T17:22:02Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:11Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@7b81e761]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9419" started-at="2014-03-27T17:22:11Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:21Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@d7dd0a0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="11170" started-at="2014-03-27T17:22:21Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:32Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@3f0bbf4b]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9454" started-at="2014-03-27T17:22:32Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:41Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@1c3bf543]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9433" started-at="2014-03-27T17:22:41Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:22:51Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@24631030]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="8819" started-at="2014-03-27T17:22:51Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:23:00Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@63bbd1f9]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9030" started-at="2014-03-27T17:23:00Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:23:09Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@3fd66596]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="9273" started-at="2014-03-27T17:23:09Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:23:18Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@14a77b98]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="testBaseProductAddNew(java.lang.Class, [Ljava.lang.String;)[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="testBaseProductAddNew" duration-ms="8700" started-at="2014-03-27T17:23:18Z" description="Admin Base Product Add New" data-provider="Data-Provider-Function" finished-at="2014-03-27T17:23:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[class java.lang.String]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[[Ljava.lang.String;@7fa342bf]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testBaseProductAddNew -->
-        <test-method status="PASS" signature="teardown()[pri:0, instance:hub.test.AddEditProductTabTest@7fb8a6af]" name="teardown" is-config="true" duration-ms="143" started-at="2014-03-27T17:23:27Z" finished-at="2014-03-27T17:23:27Z">
+        </test-method> <!-- reinitializeBrowser -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:hub.test.LoginTest@72d69a74]" name="teardown" is-config="true" duration-ms="82" started-at="2014-04-15T10:54:04Z" finished-at="2014-04-15T10:54:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- hub.test.AddEditProductTabTest -->
+      </class> <!-- hub.test.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

@@ -28,10 +28,15 @@ public class LoginRegression extends TestInitReference {
 			case "UI":
 				hlu.WidgetTileActivated();
 		        break;
-			case "Functionality":
-		        hlu.testHubLoginEmpty();
+			case "FUNCTIONALITY":
+		        hlu.LinkValidation();
 		        break;
-			
+			case "VALIDATE CREDENTIALS":
+		        hlu.testLoginCredential();
+		        break;
+			case "COLOR VALIDATION":
+		        hlu.testValidationColor();
+		        break;
 			default:
 				fail(testcase);
 		        Assert.fail("Invalid Test Data");

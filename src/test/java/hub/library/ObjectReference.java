@@ -23,6 +23,7 @@ public class ObjectReference {
     public static String mandatoryMessage = "Please complete all mandatory fields.";
     public static String loginSecurityError = "//div[@id='flashMessageContent']/div";
     public static String loginSecurityMessage = "You have attempted 3 times to login. Please click on Forgot My Password to reset your account's password.";
+    public static String loginErrorMessage = "//*[@id='hubLoginError']";
     
     
     //Signup page
@@ -447,6 +448,8 @@ public class ObjectReference {
     public static String userManual = "//a[@id='userManualDownload']";
     public static String contactUs = "//*[@id='custservice']/table/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[2]/div/a[2]";
     public static String feedback = "//*[@id='custservice']/table/tbody/tr[2]/td[2]/table/tbody/tr[1]/td[2]/div/a[3]";
+    public static String contactUsPage = "//div[contains(text(),'Contact Us')]";
+    public static String feedbackPage = "//div[contains(text(),'Feedback')]";
 }
 
 

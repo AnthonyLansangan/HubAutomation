@@ -97,9 +97,8 @@ public class FunctionReference extends Results {
         } else {
             try {
                 scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-                String filename = numNoRange.toString();
-                fail("Screenshot file name is : " + filename);
-                copyFile(scrFile, new File(rxml.data("screen_shot_location") + filename + ".png"));
+                fail("Screenshot file name is : "+ testcase);
+                copyFile(scrFile, new File(rxml.data("screen_shot_location")+ testcase + ".png"));
             } catch (NullPointerException n) {
                 fail(n.getMessage());
             }

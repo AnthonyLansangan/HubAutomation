@@ -2,16 +2,38 @@ package hub.utilities;
 
 import static org.openqa.selenium.By.xpath;
 
+import java.awt.event.KeyEvent;
 import java.io.IOException;
 
 import hub.library.FunctionReference;
+import hub.library.ReadXmlData;
 
 import org.testng.Assert;
 
+import java.nio.file.*;
+
+import javax.swing.KeyStroke;
+
+import org.openqa.selenium.Alert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.SendKeysAction;
+import org.openqa.selenium.internal.seleniumemulation.ControlKeyDown;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.server.SeleniumServer;
+
+import com.thoughtworks.selenium.Selenium;
+
 public class UserHubLoginUtil extends FunctionReference {
-	
+	ReadXmlData rxml = new ReadXmlData();
+	String rpDataRed = rxml.data("rpDataRed");
 	private String[] input = null;
 	private String testCase = "";
+	public Selenium selenium;
 	
 	public UserHubLoginUtil(String[] i) {
 		input = i;
@@ -305,7 +327,7 @@ public void WidgetTileActivated() throws Exception{
 					}
 			//Feedback
 			try{ 
-				Assert.assertFalse(isElementPresent(xpath(feedback)));
+				Assert.assertTrue(isElementPresent(xpath(feedback)));
 				}
 				catch(AssertionError e) {
 					fail(input[0] + "  - Feedback Link is not Visible");
@@ -327,31 +349,47 @@ public void WidgetTileActivated() throws Exception{
 		testCase = "RP Property Hub Logout: " + input[0];
 				
 		waitForElementPresent(xpath(userLogoutLink));
-		
+
 			//User Manual
 			try{ 
-				Assert.assertTrue(isElementPresent(xpath(userManual)));
+				//Assert.assertTrue(isElementPresent(xpath(userManual)));
+				click(xpath(userManual));
+				Thread.sleep(5000);
+				driver.findElement(By.id("userName")).sendKeys(Keys.ENTER);
+				Thread.sleep(15000);
+				Path path = Paths.get("/Users/anthony/Downloads/Hub_ChannelProductSelection.pdf");
+				Assert.assertTrue(Files.exists(path));
 				}
-				catch(Exception e) {
-					fail(input[0] + " - User Manual Link is not Visible");
+				catch(AssertionError e) {
+					fail(input[0] + " - User Manual file not downloaded");
 					takeScreenshot(input[0]);
 					resultcount++;
 					}
 			//Contact Us
 			try{ 
-				Assert.assertTrue(isElementPresent(xpath(contactUs)));
+				//Assert.assertTrue(isElementPresent(xpath(contactUs)));
+				click(xpath(contactUs));
+				Thread.sleep(15000);
+				Assert.assertEquals(input[2], getText(xpath(contactUsPage)));				
+				driver.findElement(By.id("contactUsName")).sendKeys(Keys.ESCAPE);
+				Thread.sleep(10000);
 				}
-				catch(Exception e) {
-					fail(input[0] + " - Contact Us Link is not Visible");
+				catch(AssertionError e) {
+					fail(input[0] + " - Contact Us link is not functioning");
 					takeScreenshot(input[0]);
 					resultcount++;
 					}
 			//Feedback
 			try{ 
-				Assert.assertTrue(isElementPresent(xpath(feedback)));
+				//Assert.assertTrue(isElementPresent(xpath(feedback)));
+				click(xpath(feedback));
+				Thread.sleep(15000);
+				Assert.assertEquals(getText(xpath(feedbackPage)), input[3]);				
+				driver.findElement(By.id("feedbackName")).sendKeys(Keys.ESCAPE);
+				Thread.sleep(5000);
 				}
-				catch(Exception e) {
-					fail(input[0] + "  - Feedback Link is not Visible");
+				catch(AssertionError e) {
+					fail(input[0] + "  - Feedback Link is not functioning" + " " + input[3] + " " + getText(xpath(feedbackPage)));
 					takeScreenshot(input[0]);
 					resultcount++;
 					}
@@ -362,6 +400,81 @@ public void WidgetTileActivated() throws Exception{
 		} else {
 			pass(input[0]);
 		}
+	}
+
+	
+	public void testLoginCredential () throws Exception {
+		resultcount = 0;
+		testCase = input[0];
+		waitForElementPresent(xpath(userLoginUsername));
+		isElementPresent(xpath(userLoginUsername));
+		isElementPresent(xpath(userLoginPassword));
+		isElementPresent(xpath(loginButton));
+		
+		type(xpath(userLoginUsername), input[2]);
+		type(xpath(userLoginPassword), input[3]);
+		click(xpath(loginButton));
+		
+		waitForElementPresent(xpath(loginErrorMessage));
+		System.out.println(getText(xpath(loginErrorMessage)));
+		try{
+			Assert.assertEquals(getText(xpath(loginErrorMessage)), input[4]);
+		}catch(Exception e){
+			fail("Validation message should be "+input[4]);
+			takeScreenshot(input[0]);
+			resultcount++;
+		}
+		
+		if (resultcount != 0) {
+			fail(testCase);
+		} else {
+			pass(testCase);
+		}
+		Thread.sleep(3000);
+		
+	}
+	
+	public void testValidationColor () throws Exception {
+		resultcount = 0;
+		testCase = input[0];
+		waitForElementPresent(xpath(userLoginUsername));
+		isElementPresent(xpath(userLoginUsername));
+		isElementPresent(xpath(userLoginPassword));
+		isElementPresent(xpath(loginButton));
+		
+		type(xpath(userLoginUsername), input[2]);
+		type(xpath(userLoginPassword), input[3]);
+		click(xpath(loginButton));
+		
+		waitForElementPresent(xpath(loginErrorMessage));
+		System.out.println(getText(xpath(loginErrorMessage)));
+		try{
+			Assert.assertEquals(getText(xpath(loginErrorMessage)), input[4]);
+		}catch(Exception e){
+			fail("Validation message should be "+input[4]);
+			takeScreenshot(input[0]);
+			resultcount++;
+		}
+		
+		try{
+			String color = driver.findElement(By.xpath(loginErrorMessage)).getCssValue("color");
+			System.out.println(color);
+			System.out.println(rpDataRed);
+		}catch(Exception e){
+			fail("Color should be RPData red");
+			takeScreenshot(input[0]);
+			resultcount++;
+		}
+		
+		if (resultcount != 0) {
+			fail(testCase);
+		} else {
+			pass(testCase);
+		}
+		Thread.sleep(3000);
+//		JavascriptExecutor js = (JavascriptExecutor) driver;
+//		js.executeScript(script, args)
+		
 	}
 }
 
